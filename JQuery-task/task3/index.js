@@ -4,13 +4,16 @@
 безпосередньо над відповідним елементом `<h3>`.
  */
 $(document).ready(function () {
-  // console.log($("body").children());
-  // $("h3 + div").html();
-  $("body").children().each(function(i, el) {
-    console.log($("body").children().first());
-    // if(el.html === $("h3 + div").html) {  
-      //$("h3 + div").html()
-    //   // return el.prev().before(el);
-    // }
+    
+  
+  function changePlace(elem) {
+    return elem.previousElementSibling;
+    // console.log(elem);
+  }
+  
+  $("h3 + div").each(function(i, el) {
+    console.log(changePlace(el));
+    // changePlace(el);
   });
+  
 });
