@@ -4,16 +4,7 @@
 безпосередньо над відповідним елементом `<h3>`.
  */
 $(document).ready(function () {
-    
-  
-  function changePlace(elem) {
-    return elem.previousElementSibling;
-    // console.log(elem);
-  }
-  
   $("h3 + div").each(function(i, el) {
-    console.log(changePlace(el));
-    // changePlace(el);
+    $(el).prev().before(el);
   });
-  
 });

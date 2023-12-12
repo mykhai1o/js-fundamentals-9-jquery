@@ -6,7 +6,6 @@
  */
 
 $(document).ready(function () {
-  // ваш код
   $("h2.head").css("background-color", "green");
   $("h2.head > .inner").css("font-size", "35px");
   // $("h2.head").find(".inner").css("font-size", "35px");
